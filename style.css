@@ -1,0 +1,325 @@
+
+nav{
+    width: 100%;
+    
+}
+
+nav ul
+{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    background-color: #5A5E6B;
+    text-align: center;
+    
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+
+nav li:hover{
+  
+    background-color: rgba(206,206,206,0.50);
+}
+nav li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.objet_co
+{
+    width: 1248px;
+    height: 300px;
+    opacity: 0.5;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.me_contacter
+{
+    background-color: #DADBDD;
+    padding-top: 1px;
+    border-top: 1px solid black;
+    text-align: center;
+   
+}
+
+input[type="submit"]
+{
+background-color: #F3EFF3;
+}
+
+/* Photo de moi sur page d'accueil*/
+.photo{
+    float: right;
+    padding-top: 15px;
+    padding-right: 20px;
+
+    border-radius:80px;
+    width:210px;
+    height:255px;
+}
+
+/*Photo de moi sur page A_popos*/
+.photo_bis{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+    padding-top: 15px;
+    border-radius:200px;
+    width:230px;
+    height:280px;
+    position: absolute;
+     top:500px;
+    left:530px;
+}
+
+
+
+.gros_titre
+{
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: cursive;
+    padding-left: 20px;
+    color: #898181;
+        
+}
+
+/* Ecriture sur la page d'accueil*/
+.presentation
+{
+    padding-left: 20px;
+    color: #5A5E6B;
+    font-size: 1.4em;
+     padding-left: 160px;
+     width: 800px;
+    text-align: center;
+    font-family: cursive;
+
+}
+
+/*texte qui s'affiche en en tete avce animation-que pour page accueil*/
+.amandine
+{
+    position: absolute; 
+    color: #4B616E;
+    top:100px;
+    left:490px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    animation: type 3s steps(16);
+    font-size: 3em;
+    
+    /*hiddden : on rogne le contenu pour qu'il rentre dans la boite si nécessaire*/
+    overflow: hidden;
+    /* hauteur limite du conteneur*/
+    white-space: nowrap;
+
+}
+
+/*texte qui s'affiche en en tete sans animation*/
+
+.amandine_bis
+{
+    position: absolute; 
+    color: #4B616E;
+    top:100px;
+    left:490px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 3em;
+
+   
+
+}
+/* pour animation*/
+
+@keyframes type{
+    
+    /*A 0 pas de caractere affiché*/
+    0%
+    {
+        width: 0ch;
+    }
+    
+    100%
+    {
+        width: 16ch;
+    }
+}
+
+.trait{
+    
+    margin-left: 630px;
+    width:2px;
+	height:300px;
+	background: black;
+}
+
+/*Rcta,gle qui contient les infos dans la page A_propos*/
+.rectangle{
+	width:600px;
+	height:860px;
+    left:330px;
+	background-color:whitesmoke;
+     border:1px solid black;
+    
+    /*Courbure des angles*/
+    border-radius:50px;
+    
+    /* On positionne le rectagle dans la page*/
+    position: relative;
+
+}
+
+
+.logo_mail{
+    float: left;
+    padding-left: 80px;
+    padding-top: 50px;
+    width:50px;
+	height:50px;
+    opacity: 0.4;
+
+}
+
+.ecriture_mail{
+    
+    padding-top: 55px;
+    color: gray;
+    font-size: 1.4em;
+     width: 800px;
+    font-family: Helvetica;
+    padding-left: 140px;
+    
+}
+
+.logo_telephone{
+    float: left;
+    padding-left: 60px;
+    padding-top: 50px;
+    width:90px;
+	height:90px;
+    opacity: 0.7;
+}
+
+
+.ecriture_telephone{
+    
+padding-top: 80px;
+    color: gray;
+    font-size: 1.4em;
+     width: 800px;
+    font-family: Helvetica;
+}
+
+/* Mes coordonnés dans le footer*/
+.mes_coordonnes
+{
+
+    background-color: #DADBDD;
+    float: left;
+    width: 630px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    height: 417px;
+    /* Affichage en bloc*/
+    display: block;
+}
+
+/* Texte dans le rectangle en dessous de ma photo*/
+.texte_a_propos
+{
+    position: absolute;
+    top:820px;
+    left:420px;
+     width:430px;
+    font-size: 1.4em;
+    line-height: 200%;
+    
+}
+
+/* -----PAGE EXPERIENCE---*/
+/*
+.logo_scnf{
+    padding-left: 80px;
+    width:130px;
+	height:70px;
+    
+    
+}
+*/
+
+
+/*Block (logo+text) du stage a la sncf*/
+.block_sncf{
+    
+    padding-top: 20px;
+    padding-left: 280px; 
+    padding-right: 30px;
+    text-align: justify;
+    font-size: 1.2em;
+    
+}
+
+.block_sncf .logo_sncf{
+    padding-right: 20px;
+    float: left;
+    width:145px;
+	height:70px;
+    margin-left: -150px;
+
+}
+
+
+/*Experience chez transport legay*/
+.block_legay{
+    
+    padding-right: 250px;
+    text-align: justify;
+    font-size: 1.2em;
+    padding-left: 125px;
+
+
+    
+}
+.block_legay .logo_legay{
+    float: right;
+   width:230px;
+	height:140px;
+    margin-right: -200px;
+
+}
+
+
+
+/*Experience chez transport DECATHLON*/
+.block_decathlon{
+    
+padding-top: 50px; 
+
+    padding-left: 315px; 
+    text-align: justify;
+    font-size: 1.2em;
+
+    
+}
+.block_decathlon .logo_decathlon{
+position: absolute; 
+    left: 110px;
+    top: 680px;
+    float: left;
+    width:215px;
+	height:150px;
+
+}
+
+
