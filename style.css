@@ -1,33 +1,38 @@
 
 nav{
     width: 100%;
-    
 }
+
 
 nav ul
 {
     padding: 0px;
     margin: 0px;
+    /*Pas de puces*/
     list-style-type: none;
     background-color: #5A5E6B;
+    font-size: 1.1em;
     text-align: center;
     
 }
 
 nav li{
+    /*Les mettre en ligne*/
     display: inline-block;
-    padding: 0px;
-    margin: 0px;
     width: 100px;
     height: 45px;
-    text-align: center;
+    text-align: left;
+    /*espaceùent interligne*/
     line-height: 45px;
+
 }
 
+/*Quand on passe dessus*/
 nav li:hover{
   
     background-color: rgba(206,206,206,0.50);
 }
+
 nav li a{
     text-decoration: none;
     color: whitesmoke;
@@ -38,10 +43,10 @@ nav li a{
     width: 1248px;
     height: 300px;
     opacity: 0.5;
-    padding: 0px;
-    margin: 0px;
-    position: relative;
+  
 }
+
+/*-----------FOOTER------------*/
 
 .me_contacter
 {
@@ -49,136 +54,9 @@ nav li a{
     padding-top: 1px;
     border-top: 1px solid black;
     text-align: center;
-   
-}
-
-input[type="submit"]
-{
-background-color: #F3EFF3;
-}
-
-/* Photo de moi sur page d'accueil*/
-.photo{
-    float: right;
-    padding-top: 15px;
-    padding-right: 20px;
-
-    border-radius:80px;
-    width:210px;
-    height:255px;
-}
-
-/*Photo de moi sur page A_popos*/
-.photo_bis{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-   
-    padding-top: 15px;
-    border-radius:200px;
-    width:230px;
-    height:280px;
-    position: absolute;
-     top:500px;
-    left:530px;
-}
-
-
-
-.gros_titre
-{
-    font-size: 1.8em;
-    font-weight: bold;
-    font-family: cursive;
-    padding-left: 20px;
-    color: #898181;
-        
-}
-
-/* Ecriture sur la page d'accueil*/
-.presentation
-{
-    padding-left: 20px;
     color: #5A5E6B;
-    font-size: 1.4em;
-     padding-left: 160px;
-     width: 800px;
-    text-align: center;
-    font-family: cursive;
-
 }
 
-/*texte qui s'affiche en en tete avce animation-que pour page accueil*/
-.amandine
-{
-    position: absolute; 
-    color: #4B616E;
-    top:100px;
-    left:490px;
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    animation: type 3s steps(16);
-    font-size: 3em;
-    
-    /*hiddden : on rogne le contenu pour qu'il rentre dans la boite si nécessaire*/
-    overflow: hidden;
-    /* hauteur limite du conteneur*/
-    white-space: nowrap;
-
-}
-
-/*texte qui s'affiche en en tete sans animation*/
-
-.amandine_bis
-{
-    position: absolute; 
-    color: #4B616E;
-    top:100px;
-    left:490px;
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    font-size: 3em;
-
-   
-
-}
-/* pour animation*/
-
-@keyframes type{
-    
-    /*A 0 pas de caractere affiché*/
-    0%
-    {
-        width: 0ch;
-    }
-    
-    100%
-    {
-        width: 16ch;
-    }
-}
-
-.trait{
-    
-    margin-left: 630px;
-    width:2px;
-	height:300px;
-	background: black;
-}
-
-/*Rcta,gle qui contient les infos dans la page A_propos*/
-.rectangle{
-	width:600px;
-	height:860px;
-    left:330px;
-	background-color:whitesmoke;
-     border:1px solid black;
-    
-    /*Courbure des angles*/
-    border-radius:50px;
-    
-    /* On positionne le rectagle dans la page*/
-    position: relative;
-
-}
 
 
 .logo_mail{
@@ -233,6 +111,128 @@ padding-top: 80px;
     height: 417px;
     /* Affichage en bloc*/
     display: block;
+    color: #5A5E6B;
+}
+
+
+/*Bouton du formulaire*/
+input[type="submit"]
+{
+background-color: #F3EFF3;
+}
+
+/* Photo de moi sur page d'accueil*/
+.photo{
+    float: right;
+    padding-top: 15px;
+    padding-right: 20px;
+    /*Angle arondis*/
+    border-radius:80px;
+    width:210px;
+    height:255px;
+}
+
+/*Photo de moi sur page A_popos*/
+.photo_bis{
+
+    padding-top: 15px;
+    border-radius:200px;
+    width:230px;
+    height:280px;
+    position: absolute;
+    top:500px;
+    left:530px;
+}
+
+
+
+.gros_titre
+{
+    font-size: 1.8em;
+    font-weight: bold;
+    padding-left: 20px;
+    color: #C99F9F;
+        
+}
+
+/* Ecriture sur la page d'accueil*/
+.presentation
+{
+    padding-bottom: 120px;
+    padding-left: 160px;
+    padding-top: 50px;
+
+    color: #5A5E6B;
+    font-size: 1.4em;
+    width: 800px;
+    text-align: center;
+    line-height: 150%;;
+
+
+}
+
+/*texte qui s'affiche en en tete avce animation-que pour page accueil*/
+.amandine
+{
+    position: absolute; 
+    color: #5A5E6B;
+    top:100px;
+    left:490px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    animation: type 3s steps(16);
+    font-size: 3.4em;
+    
+    /*hiddden : on rogne le contenu pour qu'il rentre dans la boite si nécessaire*/
+       overflow: hidden;
+
+    /* hauteur limite du conteneur-->Tout sur la meme ligne*/
+    white-space: nowrap;
+
+}
+
+/*texte qui s'affiche en en tete sans animation*/
+
+.amandine_bis
+{
+    position: absolute; 
+    color: #5A5E6B;
+    top:100px;
+    left:490px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 3.4em;
+
+}
+/* pour animation*/
+
+@keyframes type{
+    
+    /*A 0 pas de caractere affiché*/
+    0%
+    {
+        width: 0ch;
+    }
+    
+    100%
+    {
+        width: 16ch;
+    }
+}
+
+
+/*Rcta,gle qui contient les infos dans la page A_propos*/
+.rectangle{
+	width:600px;
+	height:860px;
+    left:330px;
+	background-color:whitesmoke;
+    border:1px solid black;
+    
+    /*Courbure des angles*/
+    border-radius:50px;
+    
+    /* On positionne le rectagle dans la page*/
+    position: relative;
+
 }
 
 /* Texte dans le rectangle en dessous de ma photo*/
@@ -243,21 +243,12 @@ padding-top: 80px;
     left:420px;
      width:430px;
     font-size: 1.4em;
-    line-height: 200%;
+    line-height: 200%;;
+    color: #5A5E6B;
     
 }
 
 /* -----PAGE EXPERIENCE---*/
-/*
-.logo_scnf{
-    padding-left: 80px;
-    width:130px;
-	height:70px;
-    
-    
-}
-*/
-
 
 /*Block (logo+text) du stage a la sncf*/
 .block_sncf{
@@ -267,6 +258,7 @@ padding-top: 80px;
     padding-right: 30px;
     text-align: justify;
     font-size: 1.2em;
+    color: #5A5E6B;
     
 }
 
@@ -287,14 +279,15 @@ padding-top: 80px;
     text-align: justify;
     font-size: 1.2em;
     padding-left: 125px;
+    color: #5A5E6B;
 
 
     
 }
 .block_legay .logo_legay{
     float: right;
-   width:230px;
-	height:140px;
+    width:230px;
+  	height:140px;
     margin-right: -200px;
 
 }
@@ -304,16 +297,15 @@ padding-top: 80px;
 /*Experience chez transport DECATHLON*/
 .block_decathlon{
     
-padding-top: 50px; 
-
+    padding-top: 50px; 
     padding-left: 315px; 
     text-align: justify;
     font-size: 1.2em;
-
+    color: #5A5E6B;
     
 }
 .block_decathlon .logo_decathlon{
-position: absolute; 
+    position: absolute; 
     left: 110px;
     top: 680px;
     float: left;
@@ -321,19 +313,56 @@ position: absolute;
 	height:150px;
 
 }
-
+/*<-----PAGE ETUDES----->*/
 .etudes
 {
-        font-size: 1.3em;
-        line-height: 200%;
+    font-size: 1.3em;
+    line-height: 200%;
     padding-left: 70px;
     padding-right: 50px;
     text-align: justify;
-
-
-
-
+    color: #5A5E6B;
 
 }
 
+
+/*<------PAGE COMPETENCES------>*/
+
+label {
+    /*Espacement puce et texte*/
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+    
+}
+
+
+li{
+    /*Puces par raport au bords*/
+    padding-left: 50px;
+}
+
+/*Barre de rpogression*/
+progress { 
+
+    border:1px solid grey;
+    width:254px;
+    border-radius:5px;
+    
+
+}
+
+
+/*Portion remplie de la barre de progres*/
+progress::-webkit-progress-value {  
+ 
+   background: #C99F9F;
+   
+} 
+
+/*Petit titre*/
+.comp{
+    font-size: 1.4em;
+    padding-left: 20px;
+}
 

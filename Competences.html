@@ -1,23 +1,127 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <!--En tete de la page-->
         <meta charset="utf-8">
          <link rel="stylesheet" href="style.css" />
-        <title>Competences</title>
+        <title>Competences </title>
         
     </head>
+    
+    
+    <!--corps de la page-->
     <body>
+        <!--En tete-->
+        <img class="objet_co" src="Objet_co.jpg" alt="Objet_co"> 
+            <p class="amandine_bis">Amandine Rathery</p>
+            
+        <!--menu-->
         <nav>
             <ul>
-              <li><a href="CV.html">Accueil</a></li>
-                <li><a href="A_propos.html">A propos </a></li>
-                <li><a href="Etudes.html">Etudes</a></li>
-                <li><a href="Experiences.html">Experiences</a></li>
-                <li><a href="Competences.html">Competences</a></li>
-                <li><a href="Interets.html">Interets</a></li>
+                <li><a href="CV.html">Accueil</a></li>
+                <li><a href="A_propos.html">À propos </a></li>
+                <li><a href="Etudes.html">Études</a></li>
+                <li><a href="Experiences.html">Expériences</a></li>
+                <li><a href="Competences.html">Compétences</a></li>
+
             </ul>
+            
+                    
         </nav>
+        <p class="gros_titre">Compétences</p>
+        <p class="comp">Langues
+      <!--En gros nom de la barre-->
+            <li>
+        <label for="file">Anglais</label>
+          <progress id="file" max="100" value="50"></progress> 50%
+           </li>
+            <br>
+            
+            <li>
+        <label for="file">Espagnol</label>
+          <progress id="file" max="100" value="50"></progress> 50%
+               </li>
+               </p>
+        
+
+        <p class="comp">Informatique
+      <!--En gros nom de la barre-->
+            <li>
+        <label for="file">C</label>
+          <progress id="file" max="100" value="50"></progress> 50%
+           </li>
+            <br>
+            
+            <li>
+        <label for="file">C++</label>
+          <progress id="file" max="100" value="60"></progress> 60% 
+               </li>
+            
+            <br>
+             <li>
+        <label for="file">C#</label>
+          <progress id="file" max="100" value="60"></progress> 60% 
+               </li>
+            <br>
+            
+               <li>
+        <label for="file">Java</label>
+          <progress id="file" max="100" value="70"></progress> 70%
+               </li>
+            <br>
+            
+            <li>
+        <label for="file">Full stack</label>
+          <progress id="file" max="100" value="50"></progress> 50% 
+               </li>
+               
+               </p>
+        
+        <br>
+        
+        
+        
+        <footer>
+           
+            <!--Section de gauche-->
+            <section class="mes_coordonnes">
+                <h2 style="text-align:center">Mes Coordonnées</h2>
+                
+                <img class="logo_mail"src="mail.png" alt="email">
+                <p class="ecriture_mail"> amandine.rathery@edu.ece.fr</p>
+                <img class="logo_telephone" src="telephone.png" alt="telephone">
+                <p class="ecriture_telephone">06 32 67 21 20</p>
+
+            </section>
+            
+            
+            
+            <section class="me_contacter">
+                <h2>Me contacter</h2>
+                
+                <form class="formulaire" method="post" >
+                <p>
+                 <input type="text" name="Nom" id="nom" placeholder="Nom" size="30" maxlength="10" />
+                 </p>   
+                     <p>
+                 <input type="tel" name="Telephone" id="telephone" placeholder="Telephone" size="30" maxlength="10" />
+                 </p> 
+                    <p>
+                 <input type="email" name="Email" id="email" placeholder="Email" size="30" maxlength="10" />
+                 </p> 
+                    <p>
+                 <input type="text" name="Sujet" id="sujet" placeholder="Sujet" size="30" maxlength="10" />
+                 </p> 
+                
+                 <textarea name="Message" id="message" placeholder="Message" rows="10" cols="50"></textarea>
+                    <p>
+                    <input type="submit" value="Envoyer" />
+                    </p>
+                  
+                    
+                </form>
+                
+            </section>
+        </footer>
     </body>
 </html>
